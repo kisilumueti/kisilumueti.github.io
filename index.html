@@ -5,10 +5,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Johnbosco Mueti" />
-  <meta name="description" content="Johnbosco Mueti - BBIT Student | Developer | IT Support | Tech Enthusiast | Portfolio" />
-  <meta name="keywords" content="Johnbosco Mueti, IT Support, Developer, Business Information Technology, Web Developer, Portfolio, GitHub, LinkedIn" />
-  <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="google2ca74ff17705b3ef.html" />
+  <meta name="description"
+    content="Johnbosco Mueti - IT Professional | Developer | Tech Enthusiast | Business Information Technology Student" />
+  <meta name="keywords"
+    content="IT Professional, Developer, Web Development, System Administration, Cybersecurity, Data Science, Python, Java, PHP, Springboot, Cisco Certified, Oracle Certified" />
+  <meta property="og:title" content="Johnbosco Mueti | Portfolio" />
+  <meta property="og:description"
+    content="Johnbosco Mueti - A dedicated IT professional specializing in IT support, system administration, and software development." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Johnbosco+Mueti+Portfolio" />
+  <meta property="og:url" content="https://www.johnboscomuetiportfolio.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Johnbosco Mueti | Portfolio" />
+  <meta name="twitter:description"
+    content="Johnbosco Mueti - A dedicated IT professional specializing in IT support, system administration, and software development." />
+  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Johnbosco+Mueti+Portfolio" />
+  <meta name="twitter:site" content="@JohnboscoMueti" />
+  <meta name="twitter:creator" content="@JohnboscoMueti" />
+
   <title>Johnbosco Mueti | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -110,26 +124,21 @@
       transform: scale(1.05);
     }
 
-    .cv-section {
-      margin-top: 2rem;
-    }
-
-    .cv-section h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--primary-color);
-    }
-
-    .cv-item {
-      margin-bottom: 1rem;
+    .skills-list,
+    .certifications-list {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
 
-    .cv-item i {
-      font-size: 2rem;
-      color: var(--primary-color);
-      margin-right: 1rem;
+    .skill-item,
+    .certification-item {
+      background: var(--primary-color);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
@@ -166,65 +175,89 @@
 <body>
   <header>
     <h1>Johnbosco Mueti</h1>
-    <p>BBIT Student | Developer | IT Support | Tech Enthusiast</p>
+    <p>IT Professional | Developer | Tech Enthusiast</p>
   </header>
 
   <nav id="navbar">
-    <a href="#about">About</a>
-    <a href="#resume">Resume</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <a href="#about"><i class="fas fa-user"></i> About</a>
+    <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+    <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+    <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+    <a href="#projects"><i class="fas fa-code"></i> Projects</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
     <div class="hamburger" id="hamburger-menu">
       <i class="fas fa-bars"></i>
     </div>
   </nav>
 
   <section id="about">
-    <h2>About Me</h2>
+    <h2><i class="fas fa-user"></i> About Me</h2>
     <img src="passport.jpg" alt="Johnbosco Mueti" style="width:150px; border-radius: 50%; margin-bottom: 1rem;">
     <p>I am a dedicated IT professional currently pursuing a degree in Business Information Technology. Passionate about IT support, system administration, cybersecurity, and design.</p>
     <div class="icon-links">
       <a href="https://github.com/kisilumueti" target="_blank"><i class="fab fa-github"></i> GitHub</a>
       <a href="https://www.linkedin.com/in/johnboscokisilumueti/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       <a href="https://instagram.com/techkenya_" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://twitter.com/JohnboscoMueti" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
     </div>
   </section>
 
-  <section id="resume" class="cv-section">
-    <h2>Resume</h2>
-    <div class="cv-item">
-      <i class="fas fa-graduation-cap"></i>
-      <div>
-        <h3>Education</h3>
-        <p><strong>Bachelor’s Degree in Business Information Technology</strong><br>St. Paul’s University, 2021 – 2025</p>
-      </div>
+  <section id="experience">
+    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <div>
+      <h3>IT Support (Volunteer)</h3>
+      <p><strong>Kangundo Level 4 Hospital</strong> | April 2024 – August 2024</p>
+      <ul>
+        <li>Assisted in the installation, configuration, and troubleshooting of hardware and software systems.</li>
+        <li>Conducted regular audits of IT assets and inventory.</li>
+        <li>Provided technical assistance and training to end-users.</li>
+        <li>Developed and implemented data security policies.</li>
+      </ul>
     </div>
-    <div class="cv-item">
-      <i class="fas fa-briefcase"></i>
-      <div>
-        <h3>Experience</h3>
-        <p><strong>IT Support (Volunteer)</strong><br>Kangundo Level 4 Hospital, April 2024 – August 2024</p>
-        <p><strong>IT Support (Attachee)</strong><br>Kangundo Level 4 Hospital, January 2024 – April 2024</p>
-      </div>
+    <div>
+      <h3>IT Support (Attachee)</h3>
+      <p><strong>Kangundo Level 4 Hospital</strong> | January 2024 – April 2024</p>
+      <ul>
+        <li>Participated in IT projects including system upgrades and migrations.</li>
+        <li>Documented IT support procedures and knowledge base articles.</li>
+        <li>Evaluated new technologies for hospital operations.</li>
+      </ul>
     </div>
-    <div class="cv-item">
-      <i class="fas fa-cogs"></i>
-      <div>
-        <h3>Skills</h3>
-        <p>Java, Python, Web Development, System Administration, Data Security, Network Management, Server Maintenance, PHP Development</p>
-      </div>
+  </section>
+
+  <section id="education">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div>
+      <h3>Bachelor’s Degree in Business Information Technology</h3>
+      <p><strong>St. Paul’s University</strong> | 2021 – 2025</p>
     </div>
-    <p>Download my full resume below.</p>
-    <a class="resume-btn" href="Johnbosco_Mueti_CV.pdf" download>Download CV</a>
+    <div>
+      <h3>Kenya Certificate of Secondary Education (KCSE)</h3>
+      <p><strong>Ndaluni Secondary School</strong> | 2017 – 2021</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="skills-list">
+      <div class="skill-item">Technical Support</div>
+      <div class="skill-item">Network Infrastructure Management</div>
+      <div class="skill-item">Data Security</div>
+      <div class="skill-item">Java</div>
+      <div class="skill-item">Python</div>
+      <div class="skill-item">Springboot</div>
+      <div class="skill-item">Web Development</div>
+      <div class="skill-item">PHP</div>
+    </div>
   </section>
 
   <section id="projects">
-    <h2>Projects</h2>
+    <h2><i class="fas fa-code"></i> Projects</h2>
     <div id="projects-list"></div>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2><i class="fas fa-envelope"></i> Contact</h2>
     <p>Email: muetijohnbosco35@gmail.com</p>
     <p>Phone: +254 716 005 166</p>
     <p>WhatsApp: <a href="https://wa.me/254716005166" target="_blank">Click to chat</a></p>
